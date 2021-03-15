@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/Rubik-Light.woff2") format("woff2"),
+        url("../fonts/Rubik-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/Rubik-LightItalic.woff2") format("woff2"),
+        url("../fonts/Rubik-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+html{
+    box-sizing: border-box;
+}
+*
+*::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background: #F6F6F9;
+}
+img{
+    text-align: center;
+    
+}
+header{
+    margin-left: auto;
+    margin-right: auto;
+    border:  1px solid red;
+    
+}
+.container{
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:  1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 0;
+    margin: 0;
+}
+.left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.site-name{
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+.sitetop-img{
+    background: #F6F6F9;
+}
+.sitetop-buttons{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sitetop-item{
+    list-style-type: none;
+
+}
+.site-button{
+    background: white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px;
+    margin-left: 5px;
+    
+}
+
+.podpis-button{
+    background-color: #1E96C8  ;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+.search-button{
+    position: relative;
+}
+.search-button::before{
+    display: block;
+    position: sticky;
+    content: "";
+    background-image: url(../images/magnifier.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+}
+.laguage-button{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.laguage-button::after{
+    display: block;
+    position: sticky;
+    content: "";
+    background-image: url(../images/russian-language-logo.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    left: 5px;
+}
+
+.container-nav{
+    padding: 21px 25px;
+    margin: 0;
+    background-color: white;
+    margin-bottom: 18px;
+}
+.site-menu{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.site-item{
+    text-decoration: none;
+    list-style-type: none;
+}
+.item-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #515151;
+    
+}
